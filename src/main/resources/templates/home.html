@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head th:replace="fragments/head :: head"></head>
+	<body>
+		<div class="container">
+			<div th:replace="fragments/header :: header(name='Home', description='Home Page')"></div>
+			<p th:text="${msg}"></p>
+			<p><a class="btn btn-primary btn-lg btn-block"  href="/model">Criar Modelo</a></p>
+			<p><a class="btn btn-primary btn-lg btn-block" href="/models">Listar Modelos</a></p>
+			<footer th:replace="fragments/footer :: footer"></footer>
+		</div>
+	</body>
+</html>

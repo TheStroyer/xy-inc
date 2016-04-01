@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div class="jumbotron" th:fragment="header">
+		<h1 th:text="${name != null ? name : 'Gerador de serviço rest'}"></h1>
+		<p th:text="${description != null ? description : 'Gerador de serviço rest'}"></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head th:replace="fragments/head :: head"></head>
+	<body>
+	<div class="container">
+		<div th:replace="fragments/header :: header(name='Modelos', description='Modelos disponiveis')"></div>
+	    <h1 th:text="${ #lists.size(models) > 0 ? '' : 'Nenhum modelo disponivel!'}" ></h1>
+	    <p th:text="${msg}"></p>
+	    <ul>
+	       <li th:each="model: ${models}" >
+	       		<a class="btn btn-secondary btn-lg" href="#" th:href="@{/{url}(url=${model.url})}" th:text="'/'+${model.url}">Modelo</a>
+	       		<a class="btn btn-primary" href="#" th:href="@{/{url}/create(url=${model.url})}">Criar</a> 
+	       		<a class="btn btn-danger" id="delete" href="#" th:href="@{/model/{id}(id=${model.id})}">Excluir</a> 
+	       </li>
+	    </ul>
+		<p><a class="btn btn-primary" href="/">Voltar</a></p>
+	</div>
+	<footer th:replace="fragments/footer :: footer"></footer>
+	</body>
+</html>

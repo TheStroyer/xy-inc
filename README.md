@@ -32,11 +32,11 @@
 	INSTRUÇÕES PARA CONFIGURAÇÃO
 **************************************/
 
-1) Configurações de banco de dados:
-	1.1) As informações para conexão no banco estão disponíveis no arquivo "application.properties". O nome do schema utilizado foi 'zup' e os scripts para criação dos modelos de dados no banco estão disponíveis no arquivo "tabelas.sql"
+	1) Configurações de banco de dados:
+		1.1) As informações para conexão no banco estão disponíveis no arquivo "application.properties". O nome do schema utilizado foi 'zup' e os scripts para criação dos modelos de dados no banco estão disponíveis no arquivo "tabelas.sql"
 
-2) Confoguração do Servidor
-	2.1) O web container usado no desenvolvimento desta versao foi o tomcat na porta 8081. Caso queira utilizar outra porta, basta alterar a propriedade server.port no arquivo "application.properties"
+	2) Confoguração do Servidor
+		2.1) O web container usado no desenvolvimento desta versao foi o tomcat na porta 8081. Caso queira utilizar outra porta, basta alterar a propriedade server.port no arquivo "application.properties"
 
 /*************************************
 	ARQUITETURA PROPOSTA
@@ -50,31 +50,31 @@ A solução é simples contendo um controlador para as requisições, entidades 
 	INSTRUÇÕES PARA EXECUÇÃO
 **************************************/
 
-1) Execução
-	3.1) Uma vez realizado as configurações acima, basta executar o jar xy-inc-0.1.0.jar: java -jar xy-inc-0.1.0
-	3.2) Caso esteja com o codigo fonte aberto, rodar a classe "Application.java"
+	1) Execução
+		1.1) Uma vez realizado as configurações acima, basta executar o jar xy-inc-0.1.0.jar: java -jar xy-inc-0.1.0
+		1.2) Caso esteja com o codigo fonte aberto, rodar a classe "Application.java"
 
 /***************************************
 	INSTRUÇÕES PARA TESTES DA APLICAÇÃO
 ****************************************/
 
-1) Tabela de fluxos
-
-FL01) Fluxo de sucesso
-FL02) Fluxo de erro
-
-2) Tabela de cenarios
-
-CN01) Criar modelo 
-CN02) Criar modelo com erro de nome
-CN03) Criar modelo com erro de attributo
-CN04) Excluir modelo
-CN05) Listar modelos
-CN06) Criar instância de modelo especifico com sucesso
-CN07) Listar instâncias de um modelo especifico
-CN08) Buscar instância de modelo especifico
-CN09) Editar instância de um modelo especifico com sucesso
-CN010) Excluir instância de um modelo especifico
+	1) Tabela de fluxos
+	
+	FL01) Fluxo de sucesso
+	FL02) Fluxo de erro
+	
+	2) Tabela de cenarios
+	
+	CN01) Criar modelo 
+	CN02) Criar modelo com erro de nome
+	CN03) Criar modelo com erro de attributo
+	CN04) Excluir modelo
+	CN05) Listar modelos
+	CN06) Criar instância de modelo especifico com sucesso
+	CN07) Listar instâncias de um modelo especifico
+	CN08) Buscar instância de modelo especifico
+	CN09) Editar instância de um modelo especifico com sucesso
+	CN010) Excluir instância de um modelo especifico
 
 3) Casos de Testes
 

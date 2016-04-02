@@ -5,7 +5,7 @@
 	**************************************/
 
 	1) Versão da jdk
-		2.1) jdk1.8.0_20
+		1.1) jdk1.8.0_20
 
 	2) Linguagem de programação
 		2.1) Java
@@ -60,21 +60,21 @@
 
 	1) Tabela de fluxos
 	
-	FL01) Fluxo de sucesso
-	FL02) Fluxo de erro
+		FL01) Fluxo de sucesso
+		FL02) Fluxo de erro
 	
 	2) Tabela de cenarios
 	
-	CN01) Criar modelo 
-	CN02) Criar modelo com erro de nome
-	CN03) Criar modelo com erro de attributo
-	CN04) Excluir modelo
-	CN05) Listar modelos
-	CN06) Criar instância de modelo especifico com sucesso
-	CN07) Listar instâncias de um modelo especifico
-	CN08) Buscar instância de modelo especifico
-	CN09) Editar instância de um modelo especifico com sucesso
-	CN010) Excluir instância de um modelo especifico
+		CN01) Criar modelo 
+		CN02) Criar modelo com erro de nome
+		CN03) Criar modelo com erro de attributo
+		CN04) Excluir modelo
+		CN05) Listar modelos
+		CN06) Criar instância de modelo especifico com sucesso
+		CN07) Listar instâncias de um modelo especifico
+		CN08) Buscar instância de modelo especifico
+		CN09) Editar instância de um modelo especifico com sucesso
+		CN010) Excluir instância de um modelo especifico
 
 	3) Casos de Testes
 
@@ -95,189 +95,189 @@
 	
 		Resultado Esperado:
 			Modelo criado com sucesso.
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 2
-
-	ID Cenário:	CN02)
-
-	ID do fluxo: FL02)
-
-	Descrição:
-		Acessar a home e clicar em criar modelo.
-
-	Condição:
-		Nome: "Products"
-		Attributo 1 -> 
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 2
+	
+		ID Cenário:	CN02)
+	
+		ID do fluxo: FL02)
+	
+		Descrição:
+			Acessar a home e clicar em criar modelo.
+	
+		Condição:
+			Nome: "Products"
+			Attributo 1 -> 
+				Nome: Deixar o campo vazio 
+				Tipo: "Palavra".
+	
+		Resultado Esperado:
+			Erro ao criar modelo!
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 3
+	
+		ID Cenário:	CN03)
+	
+		ID do fluxo: FL02)
+	
+		Descrição:
+			Acessar a home e clicar em criar modelo.
+	
+		Condição:
 			Nome: Deixar o campo vazio 
-			Tipo: "Palavra".
-
-	Resultado Esperado:
-		Erro ao criar modelo!
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 3
-
-	ID Cenário:	CN03)
-
-	ID do fluxo: FL02)
-
-	Descrição:
-		Acessar a home e clicar em criar modelo.
-
-	Condição:
-		Nome: Deixar o campo vazio 
-		Attributo 1 -> 
-			Nome: "Nome"
-			Tipo: "Palavra".
-
-	Resultado Esperado:
-		Erro ao criar modelo!
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 4
-
-	ID Cenário:	CN04)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Acessar a home e clicar em listar modelos. Selecionar um modelo na listagem e clicar em "excluir"
-
-	Condição:
-		Existir pelo menos um modelo criado.
-
-	Resultado Esperado:
-		Recarregar a página sem o modelo.
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 5
-
-	ID Cenário:	CN05)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Acessar a home e clicar em listar modelos. 
-
-	Condição:
-		Existir pelo menos um modelo criado.
-
-	Resultado Esperado:
-		Listar todos os modelos cadastrados
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 6
-
-	ID Cenário:	CN06)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Acessar a home e clicar em listar modelos. Selecionar um modelo e clicar no botão "Criar".
-		Na página que abrir, preencher os campos e clicar em salvar.
-
-
-	Condição:
-		Existir um modelo chamada Automoveis criado com dois atributos: marca e quantidade.
-		marca: FIAT
-		quantidade: 100 
-		
-	Resultado Esperado:
-		Direcionar para a página de listagem com Sucesso ao criar modelo!
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 7
-
-	ID Cenário:	CN07)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Acessar a home e clicar em listar modelos. Selecionar um modelo e clicar no em seu link correspondente
-
-	Condição:
-		Existir pelo menos uma instancia cadastrada do modelo selecionado.
-		
-	Resultado Esperado:
-		Direcionar para a página de listagem das instancias do modelo.
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 8
-
-	ID Cenário:	CN08)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Executar o caso de teste 7 e clicar em uma instancia
-
-	Condição:
-		Existir a instancia cadastrada.
-		
-	Resultado Esperado:
-		JSon com as informações do modelo (attributos e valores dos attributos)
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 9
-
-	ID Cenário:	CN09)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Executar o caso de teste 7, selecionar uma instancia e clicar no botao Editar. Preencher os novos valores e clicar em "Salvar".
-
-	Condição:
-		Existir a instancia cadastrada.
-		
-	Resultado Esperado:
-		Voltar para a página de listagem de modelos
-
-	**************************************************
-
-	**************************************************
-
-	ID de Caso de Teste: 10
-
-	ID Cenário:	CN09)
-
-	ID do fluxo: FL01)
-
-	Descrição:
-		Executar o caso de teste 7, selecionar uma instancia e clicar em "excluir"
-
-	Condição:
-		Existir a instancia cadastrada.
-		
-	Resultado Esperado:
-		Voltar para a página de listagem de modelos
-
-	**************************************************
-
-	**************************************************
+			Attributo 1 -> 
+				Nome: "Nome"
+				Tipo: "Palavra".
+	
+		Resultado Esperado:
+			Erro ao criar modelo!
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 4
+	
+		ID Cenário:	CN04)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Acessar a home e clicar em listar modelos. Selecionar um modelo na listagem e clicar em "excluir"
+	
+		Condição:
+			Existir pelo menos um modelo criado.
+	
+		Resultado Esperado:
+			Recarregar a página sem o modelo.
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 5
+	
+		ID Cenário:	CN05)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Acessar a home e clicar em listar modelos. 
+	
+		Condição:
+			Existir pelo menos um modelo criado.
+	
+		Resultado Esperado:
+			Listar todos os modelos cadastrados
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 6
+	
+		ID Cenário:	CN06)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Acessar a home e clicar em listar modelos. Selecionar um modelo e clicar no botão "Criar".
+			Na página que abrir, preencher os campos e clicar em salvar.
+	
+	
+		Condição:
+			Existir um modelo chamada Automoveis criado com dois atributos: marca e quantidade.
+			marca: FIAT
+			quantidade: 100 
+			
+		Resultado Esperado:
+			Direcionar para a página de listagem com Sucesso ao criar modelo!
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 7
+	
+		ID Cenário:	CN07)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Acessar a home e clicar em listar modelos. Selecionar um modelo e clicar no em seu link correspondente
+	
+		Condição:
+			Existir pelo menos uma instancia cadastrada do modelo selecionado.
+			
+		Resultado Esperado:
+			Direcionar para a página de listagem das instancias do modelo.
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 8
+	
+		ID Cenário:	CN08)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Executar o caso de teste 7 e clicar em uma instancia
+	
+		Condição:
+			Existir a instancia cadastrada.
+			
+		Resultado Esperado:
+			JSon com as informações do modelo (attributos e valores dos attributos)
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 9
+	
+		ID Cenário:	CN09)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Executar o caso de teste 7, selecionar uma instancia e clicar no botao Editar. Preencher os novos valores e clicar em "Salvar".
+	
+		Condição:
+			Existir a instancia cadastrada.
+			
+		Resultado Esperado:
+			Voltar para a página de listagem de modelos
+	
+		**************************************************
+	
+		**************************************************
+	
+		ID de Caso de Teste: 10
+	
+		ID Cenário:	CN09)
+	
+		ID do fluxo: FL01)
+	
+		Descrição:
+			Executar o caso de teste 7, selecionar uma instancia e clicar em "excluir"
+	
+		Condição:
+			Existir a instancia cadastrada.
+			
+		Resultado Esperado:
+			Voltar para a página de listagem de modelos
+	
+		**************************************************
+	
+		**************************************************
 

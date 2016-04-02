@@ -38,7 +38,7 @@
 	1) Configurações de banco de dados:
 		1.1) As informações para conexão no banco estão disponíveis no arquivo "application.properties". O nome do schema utilizado foi 'zup' e os scripts para criação dos modelos de dados no banco estão disponíveis no arquivo "tabelas.sql"
 
-	2) Confoguração do Servidor
+	2) Configuração do Servidor
 		2.1) O web container usado no desenvolvimento desta versão foi o tomcat na porta 8081. Caso queira utilizar outra porta, basta alterar a propriedade server.port no arquivo "application.properties"
 
 	/*************************************

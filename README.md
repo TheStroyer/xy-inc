@@ -27,6 +27,9 @@
 
 	8) Biblioteca JavaScript
 		8.1) jQuery 1.12
+	
+	9) Ambiente de desenvolvimento
+		9.1) Eclipse Mars
 
 	/*************************************
 		INSTRUÇÕES PARA CONFIGURAÇÃO
@@ -36,7 +39,7 @@
 		1.1) As informações para conexão no banco estão disponíveis no arquivo "application.properties". O nome do schema utilizado foi 'zup' e os scripts para criação dos modelos de dados no banco estão disponíveis no arquivo "tabelas.sql"
 
 	2) Confoguração do Servidor
-		2.1) O web container usado no desenvolvimento desta versao foi o tomcat na porta 8081. Caso queira utilizar outra porta, basta alterar a propriedade server.port no arquivo "application.properties"
+		2.1) O web container usado no desenvolvimento desta versão foi o tomcat na porta 8081. Caso queira utilizar outra porta, basta alterar a propriedade server.port no arquivo "application.properties"
 
 	/*************************************
 		ARQUITETURA PROPOSTA
@@ -44,14 +47,14 @@
 
 	O projeto foi desenvolvido utilizando as últimas tecnologias do mercado, fazendo com que ele esteja o mais atualizado possivel com todas as melhorias disponíveis com a evolução das linguagens, servidores, frameworks, bibliotecas e etc. tornando-o mais robusto e confiável. 
 	A arquitetura proposta utiliza um framework, bastante conhecido no mercado, o spring, isso torna sua manutenção mais fácil uma vez que, por exemplo, a mudança de um banco de dados se torna uma tarefa simples, alterado apenas um arquivo de configuração, ficando o restante transparente para o cliente. Tratando da lógica de negócio a arquitetura foi proposta para permitir mudanças e adaptar se a elas, por exemplo, no conceito de tipos de dados de atributos basta configurar um enum e a tabela do banco, para todo a aplicação se adaptar a elas. 
-	A solução é simples contendo um controlador para as requisições, entidades bem definidas e classes simples para gerenciamento dos reposirórios.
+	A solução é simples contendo um controlador para as requisições, entidades bem definidas e classes simples para gerenciamento dos repositórios.
 
 	/*************************************
 		INSTRUÇÕES PARA EXECUÇÃO
 	**************************************/
 
 	1) Execução
-		1.1) Uma vez realizado as configurações acima, basta executar o jar xy-inc-0.1.0.jar: java -jar xy-inc-0.1.0
+		1.1) Uma vez realizado as configurações acima, basta executar o jar xy-inc-0.1.0.jar: java -jar xy-inc-0.1.0.jar
 		1.2) Caso esteja com o codigo fonte aberto, rodar a classe "Application.java"
 
 	/***************************************
@@ -80,7 +83,7 @@
 
 		ID de Caso de Teste: 1
 	
-		ID Cenário:	CN01)
+		ID Cenário: CN01)
 	
 		ID do fluxo: FL01)
 	
@@ -102,7 +105,7 @@
 	
 		ID de Caso de Teste: 2
 	
-		ID Cenário:	CN02)
+		ID Cenário: CN02)
 	
 		ID do fluxo: FL02)
 	
@@ -124,7 +127,7 @@
 	
 		ID de Caso de Teste: 3
 	
-		ID Cenário:	CN03)
+		ID Cenário: CN03)
 	
 		ID do fluxo: FL02)
 	
@@ -146,7 +149,7 @@
 	
 		ID de Caso de Teste: 4
 	
-		ID Cenário:	CN04)
+		ID Cenário: CN04)
 	
 		ID do fluxo: FL01)
 	
@@ -165,7 +168,7 @@
 	
 		ID de Caso de Teste: 5
 	
-		ID Cenário:	CN05)
+		ID Cenário: CN05)
 	
 		ID do fluxo: FL01)
 	
@@ -184,7 +187,7 @@
 	
 		ID de Caso de Teste: 6
 	
-		ID Cenário:	CN06)
+		ID Cenário: CN06)
 	
 		ID do fluxo: FL01)
 	
@@ -207,7 +210,7 @@
 	
 		ID de Caso de Teste: 7
 	
-		ID Cenário:	CN07)
+		ID Cenário: CN07)
 	
 		ID do fluxo: FL01)
 	
@@ -215,10 +218,10 @@
 			Acessar a home e clicar em listar modelos. Selecionar um modelo e clicar no em seu link correspondente
 	
 		Condição:
-			Existir pelo menos uma instancia cadastrada do modelo selecionado.
+			Existir pelo menos uma instância cadastrada do modelo selecionado.
 			
 		Resultado Esperado:
-			Direcionar para a página de listagem das instancias do modelo.
+			Direcionar para a página de listagem das instâncias do modelo.
 	
 		**************************************************
 	
@@ -226,15 +229,15 @@
 	
 		ID de Caso de Teste: 8
 	
-		ID Cenário:	CN08)
+		ID Cenário: CN08)
 	
 		ID do fluxo: FL01)
 	
 		Descrição:
-			Executar o caso de teste 7 e clicar em uma instancia
+			Executar o caso de teste 7 e clicar em uma instância
 	
 		Condição:
-			Existir a instancia cadastrada.
+			Existir a instância cadastrada.
 			
 		Resultado Esperado:
 			JSon com as informações do modelo (attributos e valores dos attributos)
@@ -245,15 +248,15 @@
 	
 		ID de Caso de Teste: 9
 	
-		ID Cenário:	CN09)
+		ID Cenário: CN09)
 	
 		ID do fluxo: FL01)
 	
 		Descrição:
-			Executar o caso de teste 7, selecionar uma instancia e clicar no botao Editar. Preencher os novos valores e clicar em "Salvar".
+			Executar o caso de teste 7, selecionar uma instância e clicar no botao Editar. Preencher os novos valores e clicar em "Salvar".
 	
 		Condição:
-			Existir a instancia cadastrada.
+			Existir a instância cadastrada.
 			
 		Resultado Esperado:
 			Voltar para a página de listagem de modelos
@@ -264,15 +267,15 @@
 	
 		ID de Caso de Teste: 10
 	
-		ID Cenário:	CN09)
+		ID Cenário: CN010)
 	
 		ID do fluxo: FL01)
 	
 		Descrição:
-			Executar o caso de teste 7, selecionar uma instancia e clicar em "excluir"
+			Executar o caso de teste 7, selecionar uma instância e clicar em "excluir"
 	
 		Condição:
-			Existir a instancia cadastrada.
+			Existir a instância cadastrada.
 			
 		Resultado Esperado:
 			Voltar para a página de listagem de modelos

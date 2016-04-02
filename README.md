@@ -47,7 +47,7 @@
 
 	O projeto foi desenvolvido utilizando as últimas tecnologias do mercado, fazendo com que ele esteja o mais atualizado possivel com todas as melhorias disponíveis com a evolução das linguagens, servidores, frameworks, bibliotecas e etc. tornando-o mais robusto e confiável. 
 	A arquitetura proposta utiliza um framework, bastante conhecido no mercado, o spring, isso torna sua manutenção mais fácil uma vez que, por exemplo, a mudança de um banco de dados se torna uma tarefa simples, alterado apenas um arquivo de configuração, ficando o restante transparente para o cliente. Tratando da lógica de negócio a arquitetura foi proposta para permitir mudanças e adaptar se a elas, por exemplo, no conceito de tipos de dados de atributos basta configurar um enum e a tabela do banco, para todo a aplicação se adaptar a elas. 
-	A solução é simples contendo um controlador para as requisições, entidades bem definidas e classes simples para gerenciamento dos repositórios.
+	A solução foi projetada para seguir o padrão de mercado, vizando além da simplicidade, organização, facilidade de manutenção e entendimento. Ela contém um controlador para as requisições seguindo o modelo rest e entidades que representam de forma clara o modelo de negócio. Além disso, as classes para gerenciamento dos repositórios utilizam o jdbcTemplate, framework simples para o trabalho com o banco de dados.
 
 	/*************************************
 		INSTRUÇÕES PARA EXECUÇÃO
